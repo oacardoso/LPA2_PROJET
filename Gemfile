@@ -27,9 +27,11 @@ group :development, :test do
   gem 'spring'
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
+  # Record your test suite's HTTP interactions and replay them during future test runs for fast, deterministic, accurate tests.
+  gem 'vcr', '~> 3.0', '>= 3.0.3'
 end
 
-# geocoding 
+# geocoding
 gem 'nominatim', '~> 0.0.5'
 
 gem 'pg', '~> 0.18.4', group: :production
