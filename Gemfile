@@ -31,8 +31,11 @@ group :development, :test do
   gem 'vcr', '~> 3.0', '>= 3.0.3'
 end
 
-# geocoding
+# Geocoding.
 gem 'nominatim', '~> 0.0.5'
+
+# Ruby gem for retrieving data from the Forecast Weather API.
+gem 'forecast_io'
 
 gem 'pg', '~> 0.18.4', group: :production
 
