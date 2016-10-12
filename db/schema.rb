@@ -11,12 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161011095908) do
+ActiveRecord::Schema.define(version: 20161012173455) do
 
   create_table "cities", force: true do |t|
     t.string   "name"
     t.float    "lat"
     t.float    "lon"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "forecasts", force: true do |t|
+    t.float    "latitude"
+    t.float    "longitude"
+    t.string   "summary"
+    t.float    "temperature"
+    t.float    "windSpeed"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @forecast.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @forecast.longitude %>
+</p>
+
+<p>
+  <strong>Summary:</strong>
+  <%= @forecast.summary %>
+</p>
+
+<p>
+  <strong>Temperature:</strong>
+  <%= @forecast.temperature %>
+</p>
+
+<p>
+  <strong>Windspeed:</strong>
+  <%= @forecast.windSpeed %>
+</p>
+
+<%= link_to 'Edit', edit_forecast_path(@forecast) %> |
+<%= link_to 'Back', forecasts_path %>
