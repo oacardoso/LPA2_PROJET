@@ -12,22 +12,22 @@
 
 <p>
   <strong>Lon:</strong>
-  <%= @forecasts.currently.temperature %>
-</p>
-
-<p>
-  <strong>Lon:</strong>
-  <%= @forecasts.currently.summary %>
-</p>
-
-<p>
-  <strong>Lon:</strong>
-  <%= @forecasts.currently.windSpeed %>
-</p>
-
-<p>
-  <strong>Lon:</strong>
   <%= @city.lon %>
+</p>
+
+<p>
+  <strong>Temperature:</strong>
+  <%=  @forecasts[:temperature] %>
+</p>
+
+<p>
+  <strong>Summary:</strong>
+  <%=  @forecasts[:summary] %>
+</p>
+
+<p>
+  <strong>WindSpeed:</strong>
+  <%=  @forecasts[:windSpeed] %>
 </p>
 
 <%= link_to 'Edit', edit_city_path(@city) %> |
