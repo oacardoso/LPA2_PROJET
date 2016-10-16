@@ -3,10 +3,12 @@ class CitiesController < ApplicationController
 
   # GET /cities
   # GET /cities.json
-  def index
+   def index
     @cities = City.all
-    @forecasts = Forecast.all
-  end
+   	@cities.each do | city |
+		city.forecast_io
+	end
+   end
 
   # GET /cities/1
   # GET /cities/1.json
