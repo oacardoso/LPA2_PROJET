@@ -5,11 +5,13 @@ class CitiesController < ApplicationController
   # GET /cities.json
   def index
     @cities = City.all
+    @forecasts = Forecast.all
   end
 
   # GET /cities/1
   # GET /cities/1.json
   def show
+    @forecasts = @city.forecast_io
   end
 
   # GET /cities/new

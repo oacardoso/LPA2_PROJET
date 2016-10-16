@@ -1,6 +1,5 @@
 class Forecast < ActiveRecord::Base
-    before_create :forecast_io
-  private
+  public
 
   def forecast_io
     forecast = ForecastIO.forecast(self.latitude, self.longitude, params: { units: 'si' })
