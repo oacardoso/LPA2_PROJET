@@ -10,6 +10,7 @@ class CityTest < ActiveSupport::TestCase
   end
 
   test "should create city" do
+    VCR.use_cassette("forecast_io") do
     VCR.use_cassette("nominatim") do
       assert_difference('City.count') do
         city = City.new name: @city.name
@@ -17,5 +18,5 @@ class CityTest < ActiveSupport::TestCase
       end
     end
   end
-
+end
 end
