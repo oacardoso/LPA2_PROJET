@@ -4,13 +4,13 @@ class CitiesControllerTest < ActionController::TestCase
   setup do
     @city = cities(:one)
   end
-
-  test "should get index" do
+test "should get index" do
+    VCR.use_cassette("forecast_io") do
     get :index
     assert_response :success
     assert_not_nil assigns(:cities)
+    end
   end
-
   test "should get new" do
     get :new
     assert_response :success
