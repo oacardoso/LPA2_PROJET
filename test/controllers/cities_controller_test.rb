@@ -20,14 +20,10 @@ class CitiesControllerTest < ActionController::TestCase
 
   test "should create city" do
     VCR.use_cassette("nominatim") do
-      VCR.use_cassette("forecast_io") do
-
-
         assert_difference('City.count') do
           post :create, city: { lat: @city.lat, lon: @city.lon, name: @city.name }
         end
-      end
-      end
+    end
     assert_redirected_to city_path(assigns(:city))
   end
 
