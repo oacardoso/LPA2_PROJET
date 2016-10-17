@@ -4,7 +4,7 @@ ruby '2.3.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.6'
 
-  
+
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
@@ -39,7 +39,11 @@ gem 'nominatim', '~> 0.0.5'
 # Ruby gem for retrieving data from the Forecast Weather API.
 gem 'forecast_io', '~> 2.0'
 
-gem 'pg', '~> 0.18.4', group: :production
+
+group :production do
+  gem 'rails_12factor'
+  gem 'pg', '~> 0.18.4'
+end group: :production
 
 
 gem 'typhoeus', '~> 1.1'

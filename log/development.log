@@ -151,3 +151,86 @@ Completed 200 OK in 471ms (Views: 41.8ms | ActiveRecord: 0.4ms)
   [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 54.217.249.141 at 2016-10-17 19:07:15 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered .bundle/gems/railties-4.1.6/lib/rails/templates/rails/welcome/index.html.erb (1.4ms)
+Completed 200 OK in 14ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 54.217.249.141 at 2016-10-17 19:07:19 +0000
+Processing by Rails::WelcomeController#index as */*
+  Rendered .bundle/gems/railties-4.1.6/lib/rails/templates/rails/welcome/index.html.erb (0.6ms)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 54.217.249.141 at 2016-10-17 19:07:22 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendered .bundle/gems/railties-4.1.6/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cities" for 54.217.249.141 at 2016-10-17 19:07:28 +0000
+Processing by CitiesController#index as HTML
+  [1m[35mCity Load (0.2ms)[0m  SELECT "cities".* FROM "cities"
+  Rendered cities/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 493ms (Views: 60.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/cities.css?body=1" for 54.217.249.141 at 2016-10-17 19:07:28 +0000
+
+
+Started GET "/assets/forecasts.css?body=1" for 54.217.249.141 at 2016-10-17 19:07:29 +0000
+
+
+Started GET "/assets/students.css?body=1" for 54.217.249.141 at 2016-10-17 19:07:29 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 54.217.249.141 at 2016-10-17 19:07:29 +0000
+
+
+Started GET "/assets/application.css?body=1" for 54.217.249.141 at 2016-10-17 19:07:29 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 54.217.249.141 at 2016-10-17 19:07:29 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 54.217.249.141 at 2016-10-17 19:07:29 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 54.217.249.141 at 2016-10-17 19:07:29 +0000
+
+
+Started GET "/assets/cities.js?body=1" for 54.217.249.141 at 2016-10-17 19:07:29 +0000
+
+
+Started GET "/assets/forecasts.js?body=1" for 54.217.249.141 at 2016-10-17 19:07:29 +0000
+
+
+Started GET "/assets/students.js?body=1" for 54.217.249.141 at 2016-10-17 19:07:29 +0000
+
+
+Started GET "/assets/application.js?body=1" for 54.217.249.141 at 2016-10-17 19:07:29 +0000
+
+
+Started GET "/cities/1" for 54.217.249.141 at 2016-10-17 19:07:31 +0000
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCity Load (0.2ms)[0m  [1mSELECT  "cities".* FROM "cities"  WHERE "cities"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered cities/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 480ms (Views: 39.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 54.217.249.141 at 2016-10-17 19:07:31 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendered .bundle/gems/railties-4.1.6/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cities" for 54.217.249.141 at 2016-10-17 19:07:35 +0000
+Processing by CitiesController#index as HTML
+  [1m[35mCity Load (0.2ms)[0m  SELECT "cities".* FROM "cities"
+  Rendered cities/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 529ms (Views: 44.0ms | ActiveRecord: 0.2ms)
