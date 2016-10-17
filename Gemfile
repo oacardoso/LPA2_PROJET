@@ -43,7 +43,7 @@ gem 'forecast_io', '~> 2.0'
 group :production do
   gem 'rails_12factor'
   gem 'pg', '~> 0.18.4'
-end group: :production
+end 
 
 
 gem 'typhoeus', '~> 1.1'
