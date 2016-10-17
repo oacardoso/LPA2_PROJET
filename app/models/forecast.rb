@@ -1,4 +1,4 @@
-class Forecast < ActiveRecord::Base
+ class Forecast < ActiveRecord::Base
   public
 
   def forecast_io

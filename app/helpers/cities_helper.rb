@@ -1,2 +1,2 @@
-module CitiesHelper
+ module CitiesHelper
 end

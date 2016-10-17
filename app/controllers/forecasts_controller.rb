@@ -62,12 +62,10 @@ class ForecastsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
     def set_forecast
       @forecast = Forecast.find(params[:id])
     end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
     def forecast_params
       params.require(:forecast).permit(:latitude, :longitude, :summary, :temperature, :windSpeed)
     end

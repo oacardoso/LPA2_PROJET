@@ -1,2 +1,2 @@
-module ForecastsHelper
+ module ForecastsHelper
 end

@@ -1,4 +1,4 @@
-class City < ActiveRecord::Base
+ class City < ActiveRecord::Base
   before_create :geocode
   public
 
