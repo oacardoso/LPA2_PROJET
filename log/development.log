@@ -234,3 +234,162 @@ Processing by CitiesController#index as HTML
   [1m[35mCity Load (0.2ms)[0m  SELECT "cities".* FROM "cities"
   Rendered cities/index.html.erb within layouts/application (0.6ms)
 Completed 200 OK in 529ms (Views: 44.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 54.217.249.141 at 2016-10-17 19:59:28 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered .bundle/gems/railties-4.1.6/lib/rails/templates/rails/welcome/index.html.erb (1.4ms)
+Completed 200 OK in 14ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cities" for 54.217.249.141 at 2016-10-17 19:59:33 +0000
+Processing by CitiesController#index as HTML
+  [1m[35mCity Load (0.2ms)[0m  SELECT "cities".* FROM "cities"
+  Rendered cities/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 478ms (Views: 60.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/cities.css?body=1" for 54.217.249.141 at 2016-10-17 19:59:33 +0000
+
+
+Started GET "/assets/forecasts.css?body=1" for 54.217.249.141 at 2016-10-17 19:59:33 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 54.217.249.141 at 2016-10-17 19:59:33 +0000
+
+
+Started GET "/assets/students.css?body=1" for 54.217.249.141 at 2016-10-17 19:59:33 +0000
+
+
+Started GET "/assets/application.css?body=1" for 54.217.249.141 at 2016-10-17 19:59:33 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 54.217.249.141 at 2016-10-17 19:59:33 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 54.217.249.141 at 2016-10-17 19:59:33 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 54.217.249.141 at 2016-10-17 19:59:33 +0000
+
+
+Started GET "/assets/cities.js?body=1" for 54.217.249.141 at 2016-10-17 19:59:33 +0000
+
+
+Started GET "/assets/forecasts.js?body=1" for 54.217.249.141 at 2016-10-17 19:59:33 +0000
+
+
+Started GET "/assets/students.js?body=1" for 54.217.249.141 at 2016-10-17 19:59:33 +0000
+
+
+Started GET "/assets/application.js?body=1" for 54.217.249.141 at 2016-10-17 19:59:33 +0000
+
+
+Started GET "/cities" for 54.217.249.141 at 2016-10-17 19:59:40 +0000
+Processing by CitiesController#index as */*
+  [1m[36mCity Load (0.2ms)[0m  [1mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 523ms (Views: 48.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities" for 54.217.249.141 at 2016-10-17 19:59:41 +0000
+Processing by CitiesController#index as HTML
+  [1m[35mCity Load (0.2ms)[0m  SELECT "cities".* FROM "cities"
+  Rendered cities/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 460ms (Views: 40.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/cities.css?body=1" for 54.217.249.141 at 2016-10-17 19:59:42 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 54.217.249.141 at 2016-10-17 19:59:42 +0000
+
+
+Started GET "/assets/students.css?body=1" for 54.217.249.141 at 2016-10-17 19:59:42 +0000
+
+
+Started GET "/assets/forecasts.css?body=1" for 54.217.249.141 at 2016-10-17 19:59:42 +0000
+
+
+Started GET "/assets/application.css?body=1" for 54.217.249.141 at 2016-10-17 19:59:42 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 54.217.249.141 at 2016-10-17 19:59:42 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 54.217.249.141 at 2016-10-17 19:59:42 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 54.217.249.141 at 2016-10-17 19:59:42 +0000
+
+
+Started GET "/assets/cities.js?body=1" for 54.217.249.141 at 2016-10-17 19:59:42 +0000
+
+
+Started GET "/assets/forecasts.js?body=1" for 54.217.249.141 at 2016-10-17 19:59:42 +0000
+
+
+Started GET "/assets/application.js?body=1" for 54.217.249.141 at 2016-10-17 19:59:42 +0000
+
+
+Started GET "/assets/students.js?body=1" for 54.217.249.141 at 2016-10-17 19:59:42 +0000
+
+
+Started GET "/cities/1" for 54.217.249.141 at 2016-10-17 19:59:45 +0000
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCity Load (0.2ms)[0m  [1mSELECT  "cities".* FROM "cities"  WHERE "cities"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered cities/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 468ms (Views: 49.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities" for 54.217.249.141 at 2016-10-17 19:59:59 +0000
+Processing by CitiesController#index as HTML
+  [1m[35mCity Load (0.2ms)[0m  SELECT "cities".* FROM "cities"
+  Rendered cities/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 454ms (Views: 33.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/cities.css?body=1" for 54.217.249.141 at 2016-10-17 20:00:00 +0000
+
+
+Started GET "/assets/forecasts.css?body=1" for 54.217.249.141 at 2016-10-17 20:00:00 +0000
+
+
+Started GET "/assets/application.css?body=1" for 54.217.249.141 at 2016-10-17 20:00:00 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 54.217.249.141 at 2016-10-17 20:00:00 +0000
+
+
+Started GET "/assets/students.css?body=1" for 54.217.249.141 at 2016-10-17 20:00:00 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 54.217.249.141 at 2016-10-17 20:00:00 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 54.217.249.141 at 2016-10-17 20:00:00 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 54.217.249.141 at 2016-10-17 20:00:00 +0000
+
+
+Started GET "/assets/cities.js?body=1" for 54.217.249.141 at 2016-10-17 20:00:00 +0000
+
+
+Started GET "/assets/forecasts.js?body=1" for 54.217.249.141 at 2016-10-17 20:00:00 +0000
+
+
+Started GET "/assets/students.js?body=1" for 54.217.249.141 at 2016-10-17 20:00:00 +0000
+
+
+Started GET "/assets/application.js?body=1" for 54.217.249.141 at 2016-10-17 20:00:01 +0000
+
+
+Started GET "/cities/1" for 54.217.249.141 at 2016-10-17 20:00:05 +0000
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCity Load (0.1ms)[0m  [1mSELECT  "cities".* FROM "cities"  WHERE "cities"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered cities/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2131ms (Views: 35.7ms | ActiveRecord: 0.1ms)
