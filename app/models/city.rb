@@ -10,12 +10,12 @@
     results[:windSpeed] = forecast.currently.windSpeed
 	  results
   end
+   
+   
 
   def geocode
     places = Nominatim.search.city(self.name).limit(1)
     self.lat = places.first.lat
     self.lon = places.first.lon
   end
-
-
 end
