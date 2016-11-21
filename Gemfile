@@ -4,8 +4,6 @@ ruby '2.3.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.6'
 
-
-
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -24,8 +22,6 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
-
-
 group :development, :test do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
@@ -41,11 +37,7 @@ gem 'nominatim', '~> 0.0.5'
 # Ruby gem for retrieving data from the Forecast Weather API.
 gem 'forecast_io', '~> 2.0'
 
-
-group :production do
-  gem 'rails_12factor'
-  gem 'pg', '~> 0.18.4'
-end
+gem 'pg', '~> 0.18.4', group: :production
 
 
 gem 'typhoeus', '~> 1.1'
@@ -56,11 +48,8 @@ gem 'typhoeus', '~> 1.1'
 # Use unicorn as the app server
 # gem 'unicorn'
 
-
-
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
 # Use debugger
- # gem 'debugger', group: [:development, :test]
-
+# gem 'debugger', group: [:development, :test]
