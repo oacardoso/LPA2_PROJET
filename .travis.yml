@@ -10,4 +10,10 @@ deploy:
     repo: oacardoso/LPA2_PROJET
 sudo: required
 dist: trusty
+addons:
+  code_climate:
+    repo_token: 402982d8b8299bd628b7a26353bf785216aa5209cd9c4fa85c5f5bdcd8963e77
+# regular test configuration
+after_success:
+  - bundle exec codeclimate-test-reporter
 
