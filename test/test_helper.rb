@@ -14,4 +14,7 @@ class ActiveSupport::TestCase
   fixtures :all
 
   # Add more helper methods to be used by all tests here...
+    Rails.application.configure do                                                                                                               
+    config.active_support.test_order = :sorted                                                                                                 
+  end       
 end
