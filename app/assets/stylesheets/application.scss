@@ -14,3 +14,57 @@
 // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 @import "bootstrap-sprockets";
 @import "bootstrap";
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-left: 10px;
+}
+
+h1{
+   margin-top: 10px;
+   margin-bottom: 40px;
+   margin-left: 10px;
+   text-align: left;
+ }
+
+ h2{                      //a voir pour city
+   margin-top: 60px;      
+   margin-left: 15px;
+   text-align: center;
+ }
+
+ td, th {
+ 	padding: 15px;
+  margin-left: 10px;
+  text-align: center;
+  }
+
+  h3{                      //a voir pour city
+  button-align: right;
+  margin-left: 46%;
+  }
+
+  .navbar-inverse .navbar-nav > li > a {
+  color: #000000;
+ }
+
+ .navbar-inverse .navbar-brand {
+ 	color: #000000;
+ }
+
+ .navbar-inverse {                      
+ 	background-color: #FF8C00;
+ 	border-color: #000000;
+ }
+
+.btn{
+  margin-left: 10px;
+}
+
+.field{
+  margin-left: 10px;
+}
+
+p{
+  margin-left: 10px;
+}
